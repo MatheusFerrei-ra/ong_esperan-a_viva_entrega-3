@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ONG Esperança Viva</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.fa8kGwOMaR2TWWjyNWbcAAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="logo" />
+      </div>
+      <button class="hamburger" aria-label="Abrir menu">☰</button>
+      <nav class="nav" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" class="ativo">Início</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle">Mais ▾</a>
+            <div class="dropdown-menu" role="menu">
+              <a href="#">Transparência</a>
+              <a href="#">Relatórios</a>
+              <a href="#">Contato</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Transformando vidas com solidariedade</h1>
+      <p>Projetos sociais focados em educação, alimentação e moradia. Venha conhecer e ajudar.</p>
+    </section>
+
+    <section>
+      <h2>Projetos em destaque</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="meta"><span class="badge">Alimentação</span><span class="badge-tag">Comunidade</span></div>
+          <h3>Alimente o Bem</h3>
+          <p>Distribuição semanal de cestas básicas, refeições e acompanhamento social.</p>
+          <div class="progress"><i style="width:70%;background:var(--color-accent)"></i></div>
+          <div class="controls"><button class="btn">Saiba mais</button><button class="btn secondary" data-modal-open="modal1">Doar</button></div>
+        </article>
+
+        <article class="card">
+          <div class="meta"><span class="badge">Educação</span><span class="badge-tag">Crianças</span></div>
+          <h3>Educar para o Futuro</h3>
+          <p>Aulas de reforço, material escolar e acompanhamento pedagógico.</p>
+          <div class="progress"><i style="width:45%;background:var(--color-accent)"></i></div>
+          <div class="controls"><button class="btn">Saiba mais</button><button class="btn secondary">Voluntarie-se</button></div>
+        </article>
+      </div>
+    </section>
+
+    <div class="form-card" style="margin-top:var(--space-4)">
+      <h2>Participe</h2>
+      <p class="form-note">Cadastre-se como voluntário ou doador na página de cadastro.</p>
+      <div style="margin-top:12px"><a class="btn" href="cadastro.html">Ir para cadastro</a></div>
+    </div>
+  </main>
+
+  <div class="modal-backdrop" role="dialog" aria-hidden="true">
+    <div class="modal" id="modal1" style="display:none">
+      <h3>Doar para Alimente o Bem</h3>
+      <p>Doação simulada para fins de demonstração.</p>
+      <div style="display:flex;gap:8px;margin-top:12px"><button data-modal-close class="btn">Fechar</button><button class="btn secondary">Doar (simulado)</button></div>
+    </div>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <div class="container"><p>📞 (11) 99999-9999 | ✉️ contato@esperancaviva.org</p></div>
+  </footer>
+</body>
+</html>
